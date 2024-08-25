@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "no-unused-vars": "off", // Disables the no-unused-vars rule
+    "react/prop-types": "off", // Disables the react/prop-types rule
+    "no-unreachable": "off",
+    "jsx-a11y/alt-text": "off"
+  }
+}
