@@ -111,7 +111,7 @@ const CompareProducts = () => {
                   products?.length === 4 ? null : setOpenModal(true)
                 }
               >
-                Add to Compare
+                Add More
               </div>
             </div>
 
