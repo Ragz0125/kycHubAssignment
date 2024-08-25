@@ -15,8 +15,7 @@ const ProductTable = (props: any) => {
   }, [state]);
 
   const handleChange = (data: any) => {
-    console.log(JSON.stringify(data) === JSON.stringify(state.products));
-    console.log(data , " " , state.products)
+   
     if (
       props?.products.includes(data) ||
       JSON.stringify(data) === JSON.stringify(state.products)
