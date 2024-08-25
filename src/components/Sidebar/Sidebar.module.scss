@@ -1,0 +1,37 @@
+.container{
+    background-color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+    
+    .companyName{
+        color: #242731;
+        font-weight: 700;
+        font-size: 16px;
+
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-bottom: 2px solid #BBBFC1;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        margin-top: 10px;
+        height: 50px;
+        cursor: pointer;
+        font-weight: 500;
+
+        .iconContainer{
+            padding-top: 10px;
+        }
+    }
+}
