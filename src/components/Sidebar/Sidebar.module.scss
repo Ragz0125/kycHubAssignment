@@ -1,37 +1,53 @@
-.container{
-    background-color: #fff;
-    width: 200px;
+.container {
+  background-color: #fff;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+
+  .companyName {
+    color: #242731;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 25px;
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
 
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
-    
-    .companyName{
-        color: #242731;
-        font-weight: 700;
-        font-size: 16px;
+    border-bottom: 2px solid #bbbfc1;
+  }
 
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 500;
 
-        border-bottom: 2px solid #BBBFC1;
+    .iconContainer {
+      padding-top: 10px;
     }
+  }
+}
 
-    .row{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        align-items: center;
-        margin-top: 10px;
-        height: 50px;
-        cursor: pointer;
-        font-weight: 500;
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #48c8ff;
+  border: 2px solid #48c8ff;
 
-        .iconContainer{
-            padding-top: 10px;
-        }
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #F7F7F8;
 }

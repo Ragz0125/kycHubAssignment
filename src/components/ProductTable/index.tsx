@@ -112,6 +112,7 @@ const ProductTable = (props: any) => {
       columns={columns}
       showSorterTooltip={{ target: "sorter-icon" }}
       bordered
+     
     />
   );
 };

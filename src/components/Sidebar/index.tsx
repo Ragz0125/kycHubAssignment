@@ -3,24 +3,29 @@ import Icons from "../Icons";
 import styles from "../Sidebar/Sidebar.module.scss";
 import { useNavigate } from "react-router-dom";
 
-interface SideBarProps{
+interface SideBarProps {
   page?: string;
 }
 
 const SideBar = (props: SideBarProps) => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  const handleNavigation = (route: any) => {
+    navigate(route);
+  };
 
-  const handleNavigation = (route: any)=>{
-    navigate(route)
-  }
-  
   return (
     <div className={styles.container}>
-      <div className={styles.companyName}>PRODUCT MATCH</div>
+      <div className={styles.companyName}>
+        <div className={styles.logo}>CI</div>
+        CompareIt
+      </div>
 
       {sideBarOptions.map((option, index) => (
-        <div className={styles.row} onClick={()=>handleNavigation(option?.route)}>
+        <div
+          className={styles.row}
+          onClick={() => handleNavigation(option?.route)}
+        >
           <div className={styles.iconContainer}>
             <Icons icon={option.icon} page={props?.page} />
           </div>
