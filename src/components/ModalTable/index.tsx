@@ -16,7 +16,7 @@ const ModalTable = ({ isOpen, isClose, setProducts, products }: ModalTableProps)
   useEffect(() => {
     if (products.length === 0) {
       setDisclaimer("");
-      setState({...state, products:null})
+      // setState({...state, products:null})
     }
   }, [products]);
 

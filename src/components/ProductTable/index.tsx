@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import styles from "../ProductTable/ProductTable.module.scss";
 import { MyContext } from "../../store";
 
-
 const ProductTable = (props: any) => {
   const [productsData, setProductData] = useState<any>();
   const { state, setState }: any = useContext(MyContext);
@@ -16,14 +15,16 @@ const ProductTable = (props: any) => {
   }, [state]);
 
   const handleChange = (data: any) => {
+    console.log(JSON.stringify(data) === JSON.stringify(state.products));
+    console.log(data , " " , state.products)
     if (
       props?.products.includes(data) ||
       JSON.stringify(data) === JSON.stringify(state.products)
     ) {
-      props?.setDisclaimer("Product already added to comparison"); 
+      props?.setDisclaimer("Product already added to comparison");
     } else if (props?.products.length < 4) {
       props?.setProducts((prevData: any) => [...prevData, data]);
-      props?.setDisclaimer(""); 
+      props?.setDisclaimer("");
     }
   };
 
@@ -112,7 +113,6 @@ const ProductTable = (props: any) => {
       columns={columns}
       showSorterTooltip={{ target: "sorter-icon" }}
       bordered
-     
     />
   );
 };

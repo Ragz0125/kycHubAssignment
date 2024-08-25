@@ -58,6 +58,11 @@ const CompareTable = () => {
 
   const handleRemoveProduct = (productName: any) => {
     setProducts(products.filter((product: any) => product.id !== productName));
+
+    //Avoiding duplicates when updating states(self-reference)
+    if(products.length === 1 || state.products.length>0){
+      setState({...state, products:null})
+    }
   };
 
   const columns = [
