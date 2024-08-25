@@ -21,7 +21,7 @@ const features: featureProps[] = [
   { key: "8", feature: "Category" },
 ];
 
-const CompareTable = () => {
+const CompareProducts = () => {
   const { state, setState }: any = useContext(MyContext);
 
   const [products, setProducts] = useState<any>([]);
@@ -141,4 +141,4 @@ const CompareTable = () => {
   );
 };
 
-export default CompareTable;
+export default CompareProducts;

@@ -10,7 +10,7 @@ function App() {
     <MyProvider>
       <Routes>
         <Route path="/" element={<ProductDetailsPage />} />
-        <Route path="/compare-products/" element={<CompareProductsPage />} />
+        <Route path="/compare-products" element={<CompareProductsPage />} />
       </Routes>
     </MyProvider>
   );
